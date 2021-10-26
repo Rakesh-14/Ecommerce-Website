@@ -1,0 +1,76 @@
+<html>
+<head><title>Online Shopping</title>
+
+<style>
+/* for using fontawesome we have to write this 1st then where ever you want to use
+	font awesome icone then search from fontawesome site and copy the code and then past here or 
+	we can write <script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script> 
+	in head then where ever you want to use font awesome icone then search from site and copy past or it is embed code
+	or or this line is first kit i.e when we resitered our email id on fontawesome website then they send one code
+	which we have to write on head section then which icone we have to use then we copy code from fontawesome site then paste where we want */
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+	font-family:sans-serif;
+	color: #fff;
+	background:url(vali.png);
+	background-position: center;
+	background-size:cover;
+}
+
+
+.container{
+	background: rgba(44,62,80,0.7);
+	padding: 40px;
+	width: 250px;
+	margin:8% auto 0;
+	height: 400px;
+	margin-left:180x;
+}
+
+.textbox{
+	width:100%;
+	overflow:hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 0;
+}
+
+</style>
+</head>
+
+<body>
+<script language="javascript">
+function validation(){
+	var name=document.myform.name.value;
+	var pass=document.myform.password.value;
+ 	if(name==null||name==""){
+		alert("enter name");
+		return false;
+	}
+	else if(pass.length<6){
+		alert("enter password");
+		return false;
+	}
+}
+</script>
+
+<div class="container">
+<form  name="myform" method="post" action="file:///C:/Users/Rakesh%20Yadav/Desktop/Ecommerce/web.html" onsubmit="return validation()">
+	<h2>Log In</h2>
+	<div class="textbox">
+		<i class="fa fa-user" aria-hidden="true"></i>
+		<input type="text" placeholder="Username" name="name" style="width:200px;height:24px;"><br>
+	</div>
+
+	<div class="textbox">
+		<i class="fa fa-lock" aria-hidden="true"></i>
+		<input type="password" placeholder="Password" name="password" style="width:202px;height:24px;"><br><br>
+	</div>
+
+	<input type="submit" value="Submit" >
+</form>
+</div>
+
+</body>
+</html>	
